@@ -2,7 +2,7 @@ data class Day1Answers(val part1: Int, val part2: Int)
 
 class Day1(val input: String) {
     fun solve() : Day1Answers {
-        val collected =  input.split("\r\n")
+        val collected =  input.split("\r\n", "\n")
             .fold(mutableListOf(mutableListOf<String>())){ acc, s ->
                 if(s.isBlank()) {
                     acc.add(mutableListOf())

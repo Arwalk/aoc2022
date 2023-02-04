@@ -76,7 +76,7 @@ data class SecoundRound(val opponent : RPS, val solution : Solution) : HasScore 
 
 class Day2(private val input : String) {
     fun solve() : Day2Answer {
-        val collected = input.split("\r\n")
+        val collected = input.split("\r\n", "\n")
             .filter { it.isNotEmpty() }
             .map{ it.split(" ") }
 
